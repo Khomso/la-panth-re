@@ -9,10 +9,16 @@ body {
 
 a,
 button {
+    text-decoration: none;
     transition: all .3s ease-in-out;
     outline: none!important;
 }
-
+ul{
+    list-style: none;
+}
+.li{
+    text-decoration: none;
+}
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -55,7 +61,12 @@ a:hover {
 .bloc-sm {
     padding: 20px 50px;
 }
-
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -363,13 +374,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
+    
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -506,6 +511,7 @@ button {
 }
 
 .form-control {
+    width: 90%;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
@@ -655,7 +661,8 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    margin-right: 20px;
+    max-width: 1300px;
 }
 
 .hero-bloc-text {
@@ -736,31 +743,10 @@ h4 {
     margin-bottom: 14px;
     margin-top: 24px;
 }
-.orange{
-    color: white !important;;
-}
+
 .black {
     color: #050709!important;
 }
-
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-
-.avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
-}
-
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
-
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
@@ -792,42 +778,6 @@ h4 {
     color:black!important;
 }
 
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.ltc-atomic-tangerine {
-    color: #F3976C!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
-}
-
-.icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
-.bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
-}
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1045,4 +995,30 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+@media only screen and (min-width: 320px) {
+    .flex{
+        flex-direction: column;
+    }
+    ul{
+        padding: 15px;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    .flex{
+        flex-direction: row;
+    }
+    .li{
+        margin-right: 35px;
+    }
+    .form-control{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 910px) {
+    .form-control{
+        width: 100%;
+    }
+    
 }
