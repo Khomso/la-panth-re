@@ -16,14 +16,14 @@
     />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style_contact.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
     <title>La Panthère - Page contact</title>
@@ -42,29 +42,28 @@
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html"
                 ><img
-                  src="img/agence-la-panthere-monochrome.svg"
-                  alt="atlanta web design logo"
+                  src="./images/agence-la-panthere-monochrome.svg"
+                  alt="Agence la Panthère logo"
                   height="40"
               /></a>
-			  <!-- button n'a aucune fonctionnalité -->
-              
-			  <!-- <button
+              <!-- button n'a aucune fonctionnalité -->
+
+              <!-- <button
                 id="nav-toggle"
                 type="button"
                 class="ui-navbar-toggle navbar-toggle"
                 data-toggle="collapse"
                 data-target=".navbar-1"
               > -->
-                <!-- <span class="sr-only">Toggle navigation</span
+              <!-- <span class="sr-only">Toggle navigation</span
                 ><span class="icon-bar"></span><span class="icon-bar"></span
                 ><span class="icon-bar"></span>
               </button> -->
-
             </div>
-            <div class="acceuil">
-              <ul>
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
                 <li>
-                  <a class="li" href="index.html">Accueil</a>
+                  <a href="index.html">Accueil</a>
                 </li>
               </ul>
             </div>
@@ -84,7 +83,7 @@
               <h1 class="text-center hero-bloc-text black">
                 Parlons web design !
               </h1>
-              <p class="text-center mg-lg black ">
+              <p class="text-center mg-lg black">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
@@ -122,7 +121,7 @@
                     type="text"
                     required
                     id="msg"
-					name="user_msg"
+                    name="user_msg"
                   />
                 </div>
                 <div class="form-group">
@@ -164,47 +163,51 @@
 
       <!-- Footer - bloc-8 -->
       <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-		<div class="container bloc-sm">
-			<div class="row">
-				<div class="col-sm-12">
-					<p class="text-center black">
-						Agence La Panthère - Agence web basée à Lyon.<br>
-					</p>
-					<div>
-						<div>
-							<div>
-								<a href="https://twitter.com/i/flow/login">
-									<p class="black">Twitter</p>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a class="social" href="https://www.facebook.com/">
-									<p class="black">Facebook</p>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a href="https://www.linkedin.com/feed/">
-									<p class="black">linkedin</p>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a href="https://www.instagram.com/">
-									<p class="black">Instagram</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="container bloc-sm">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="text-center black">
+                Agence La Panthère - Agence web basée à Lyon.<br>
+              </p>
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://twitter.com/i/flow/login">
+                      <div class="fa fa-twitter icon-md black"></div>
+                      <p class="black">Twitter</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://www.facebook.com/">
+                      <div class="fa fa-facebook icon-md black"></div>
+                      <p class="black">Facebook</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://www.linkedin.com/feed/">
+                      <div class="fa fa-dribbble icon-md black"></div>
+                      <p class="black">linkedin</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://www.instagram.com/">
+                      <div class="fa fa-instagram icon-md black"></div>
+                      <p class="black">Instagram</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
